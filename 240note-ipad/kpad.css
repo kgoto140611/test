@@ -1,0 +1,16 @@
+/* ---- 数字のテンキー（iPad用） ---- */
+.kpad{position:fixed; z-index:140; width:280px; background:#1D2326; color:#EDEBE5; border:1px solid #3A3F45; border-radius:14px;
+  box-shadow:0 18px 44px rgba(0,0,0,.45); overflow:hidden; touch-action:none; user-select:none; -webkit-user-select:none}
+.kpad[hidden]{display:none}
+.kpbar{display:flex; align-items:center; gap:6px; padding:6px 8px 6px 12px; font-size:13px; font-weight:700}
+.kpbar span{flex:1}
+.kpbar button{appearance:none; border:1px solid #3A3F45; background:transparent; color:#EDEBE5; border-radius:9px; padding:6px 10px; font:inherit; font-size:13px; min-height:38px}
+.kpkeys{display:grid; grid-template-columns:repeat(4, 1fr); gap:6px; padding:0 8px 8px}
+.kpkeys button{appearance:none; border:0; border-radius:10px; background:#2C3438; color:#EDEBE5; font:inherit; font-size:22px; font-weight:600; min-height:56px;
+  font-variant-numeric:tabular-nums; -webkit-tap-highlight-color:transparent}
+.kpkeys button:active{background:#44505A}
+.kpkeys button.fn{background:#232A2D; color:#C9D1D2; font-size:19px}
+.kpkeys button.kpnext{background:#E8B43A; color:#241B05; font-size:16px; font-weight:800}
+/* ---- 指やペンでつかみやすく（iPad用） ---- */
+.ws-h > .ws-div::before{content:""; position:absolute; top:0; bottom:0; left:-12px; right:-12px}
+.ws-v > .ws-div::before{content:""; position:absolute; left:0; right:0; top:-12px; bottom:-12px}
